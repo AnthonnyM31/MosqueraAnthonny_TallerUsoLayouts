@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MosqueraAnthonny_TallerUsoLayouts.StackLayoutPage">
+    <StackLayout>
+        <Label Text="Tu Nombre 1" FontSize="20" />
+        <Label Text="Tu Nombre 2" FontSize="25" />
+        <Label Text="Tu Nombre 3" FontSize="30" />
+        <Button Text="Ir a FlexLayout" Clicked="GoToFlexLayout" />
+    </StackLayout>
+</ContentPage>
