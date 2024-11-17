@@ -11,4 +11,13 @@ public partial class FlexLayoutPage : ContentPage
     {
         await Navigation.PushAsync(new AbsoluteLayoutPage());
     }
+
+    private async void OnImageTapped(object sender, EventArgs e)
+    {
+        if (sender is Image image && image.BindingContext is string imageName)
+        {
+            await DisplayAlert("Imagen Tapped", $"Has tocado: {imageName}", "OK");
+            await Navigation.PushAsync(new AbsoluteLayoutPage());
+        }
+    }
 }

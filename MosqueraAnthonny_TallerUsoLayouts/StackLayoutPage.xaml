@@ -3,9 +3,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MosqueraAnthonny_TallerUsoLayouts.StackLayoutPage">
     <StackLayout>
-        <Label Text="Tu Nombre 1" FontSize="20" />
-        <Label Text="Tu Nombre 2" FontSize="25" />
-        <Label Text="Tu Nombre 3" FontSize="30" />
+        <Label Text="Anthonny" FontSize="20" />
+        <Label Text="Juan Jose" FontSize="25" />
+        <Label Text="Sebastian" FontSize="30" />
         <Button Text="Ir a FlexLayout" Clicked="GoToFlexLayout" />
     </StackLayout>
 </ContentPage>

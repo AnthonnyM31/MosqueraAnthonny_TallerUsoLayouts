@@ -5,14 +5,22 @@
     <FlexLayout Direction="Column">
         <Frame>
             <StackLayout Orientation="Horizontal">
-                <Image Source="image1.png" WidthRequest="50" HeightRequest="50" />
-                <Label Text="Tu Nombre" VerticalOptions="Center" />
+                <Image Source="perro1.jpg" WidthRequest="50" HeightRequest="50">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnImageTapped" CommandParameter="image1" />
+                    </Image.GestureRecognizers>
+                </Image>
+                <Label Text="juanjo" VerticalOptions="Center" />
             </StackLayout>
         </Frame>
         <Frame>
             <StackLayout Orientation="Horizontal">
-                <Image Source="image2.png" WidthRequest="50" HeightRequest="50" />
-                <Label Text="Tu Nombre" VerticalOptions="Center" />
+                <Image Source="perro2.png" WidthRequest="50" HeightRequest="50">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnImageTapped" CommandParameter="image2" />
+                    </Image.GestureRecognizers>
+                </Image>
+                <Label Text="anthonny" VerticalOptions="Center" />
             </StackLayout>
         </Frame>
         <Button Text="Ir a AbsoluteLayout" Clicked="GoToAbsoluteLayout" />
