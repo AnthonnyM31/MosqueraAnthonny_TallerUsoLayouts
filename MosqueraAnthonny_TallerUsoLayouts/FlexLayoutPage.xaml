@@ -5,24 +5,30 @@
     <FlexLayout Direction="Column">
         <Frame>
             <StackLayout Orientation="Horizontal">
-                <Image Source="perro1.jpg" WidthRequest="50" HeightRequest="50">
-                    <Image.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="OnImageTapped" CommandParameter="image1" />
-                    </Image.GestureRecognizers>
-                </Image>
+                <AbsoluteLayout>
+                    <Image Source="perro1.jpg" WidthRequest="50" HeightRequest="50">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnImageTapped" CommandParameter="image1" />
+                        </Image.GestureRecognizers>
+                    </Image>
+                    <Button Text="Invisible Button" BackgroundColor="Transparent" Opacity="0" AbsoluteLayout.LayoutBounds="0,0,50,50" AbsoluteLayout.LayoutFlags="None" Clicked="GoToAbsoluteLayout" />
+                </AbsoluteLayout>
                 <Label Text="juanjo" VerticalOptions="Center" />
             </StackLayout>
         </Frame>
         <Frame>
             <StackLayout Orientation="Horizontal">
-                <Image Source="perro2.png" WidthRequest="50" HeightRequest="50">
-                    <Image.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="OnImageTapped" CommandParameter="image2" />
-                    </Image.GestureRecognizers>
-                </Image>
+                <AbsoluteLayout>
+                    <Image Source="perro2.png" WidthRequest="50" HeightRequest="50">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnImageTapped" CommandParameter="image2" />
+                        </Image.GestureRecognizers>
+                    </Image>
+                    <Button Text="Invisible Button" BackgroundColor="Transparent" Opacity="0" AbsoluteLayout.LayoutBounds="0,0,50,50" AbsoluteLayout.LayoutFlags="None" Clicked="GoToAbsoluteLayout"/>
+                </AbsoluteLayout>
                 <Label Text="anthonny" VerticalOptions="Center" />
             </StackLayout>
         </Frame>
-        <Button Text="Ir a AbsoluteLayout" Clicked="GoToAbsoluteLayout" />
+        
     </FlexLayout>
 </ContentPage>
